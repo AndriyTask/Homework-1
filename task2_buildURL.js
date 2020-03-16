@@ -10,6 +10,8 @@ let queryParam = new URLSearchParams({
 });
 let convertObjectToString = queryParam.toString();
 
+// Побудова шляху і параметрів має відбуватись усередині функції, а не до неї.
+
 let buildMyUrl = (myDomain, myPath, myQuery)=>{
   if (myQuery === undefined) {
       console.log(`${myDomain}/${myPath}`);
